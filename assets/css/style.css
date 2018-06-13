@@ -18,6 +18,10 @@ a {
 .containerRadius {
     border-radius: 15px;
 }
+
+header {
+    height: 66px;
+}
 /******** Nav ********/ 
 
 .navbar-brand {
@@ -33,14 +37,14 @@ a {
     justify-content: center;
 }
 
+
 .spacer {
     padding:20px;
     width:100%;
 }
 
+
 /******** Main Content ********/
-
-
 
 .container .row h2 {
     padding: 10px;
