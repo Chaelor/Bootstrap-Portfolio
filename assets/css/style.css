@@ -11,17 +11,23 @@ body {
     background-image: url("../images/stripes.png")
 }
 
+
+/******** Header ********/
 a {
     color: white;
 }
 
-.containerRadius {
-    border-radius: 15px;
-}
+
 
 header {
     height: 66px;
 }
+
+.spacer {
+    padding:20px;
+    width:100%;
+}
+
 /******** Nav ********/ 
 
 .navbar-brand {
@@ -37,17 +43,19 @@ header {
     justify-content: center;
 }
 
-
-.spacer {
-    padding:20px;
-    width:100%;
-}
-
-
 /******** Main Content ********/
 
 .container .row h2 {
     padding: 10px;
+}
+
+.containerRadius {
+    border-radius: 15px;
+}
+
+.container .row ul {
+    position:relative;
+    left:20px;
 }
 
 
@@ -61,7 +69,7 @@ header {
 
 h3 {
     position: absolute;
-    top:60%;
+    top:80%;
     left:0;
     width:100%;
     padding: auto 0;
@@ -70,8 +78,7 @@ h3 {
     background-color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: center;
-    line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21)));
-
+    font-size: 1.5em
 }
 
 /******** Contact ********/
@@ -81,8 +88,62 @@ textarea {
 
 /******** Footer ********/
 
-footer {
+footer{
     position: fixed;
     bottom:0;
-    margin-top: 30px;
+    padding-top: 15px;
+    border-top: solid 10px;
+    border-color: #4aaaa5;
 }
+
+.push {
+    height:75px;
+}
+
+/******** Responsive ********/
+
+@media only screen and (max-width:989px){
+
+.navbar ul{
+    background-color: white;
+    border: 1px solid #cccccc;
+    z-index: 1;
+    box-shadow: 1px 1px 1px grey;
+    padding-left: 10px;
+    width: 150px;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    padding-top: 15px;
+    border-top: solid 10px;
+    border-color: #4aaaa5;
+}
+
+}
+
+
+@media only screen and (max-width:767px) {
+    h3 {
+        position: absolute;
+        top:80%;
+        left:0;
+        width:100%;
+        padding: auto 0;
+        margin: 0;
+        color: white;
+        background-color: #4aaaa5;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        text-align: center;
+        font-size: .75em
+    }
+
+    footer{
+        position: fixed;
+        bottom:0;
+        padding-top: 15px;
+        border-top: solid 10px;
+        border-color: #4aaaa5;
+    }
+} 
